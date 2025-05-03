@@ -1,0 +1,44 @@
+[
+  {
+    "from": "BRL",
+    "to": "MXN",
+    "amount": 12.0,
+    "result": 41.699664
+  },
+  {
+    "from": "MXN",
+    "to": "ARS",
+    "amount": 45.0,
+    "result": 2687.025915
+  },
+  {
+    "from": "MXN",
+    "to": "COP",
+    "amount": 32.0,
+    "result": 6926.070432
+  },
+  {
+    "from": "KRW",
+    "to": "MXN",
+    "amount": 13.0,
+    "result": 0.182026
+  },
+  {
+    "from": "MXN",
+    "to": "COP",
+    "amount": 32.0,
+    "result": 6928.214592
+  },
+  {
+    "from": "MXN",
+    "to": "USD",
+    "amount": 12.0,
+    "result": 0.612768
+  },
+  {
+    "from": "MXN",
+    "to": "USD",
+    "amount": 21.0,
+    "result": 1.072491
+  }
+]

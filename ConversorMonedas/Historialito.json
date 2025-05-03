@@ -40,5 +40,17 @@
     "to": "USD",
     "amount": 21.0,
     "result": 1.072491
+  },
+  {
+    "from": "MXN",
+    "to": "USD",
+    "amount": 10.0,
+    "result": 0.51071
+  },
+  {
+    "from": "MXN",
+    "to": "USD",
+    "amount": 50.0,
+    "result": 2.55355
   }
 ]

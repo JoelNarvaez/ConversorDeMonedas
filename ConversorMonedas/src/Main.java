@@ -36,7 +36,7 @@ public class Main {
                     break;
                 } catch (InputMismatchException e) {
                     System.out.println("Por favor ingresa un número válido.");
-                    scanner.nextLine(); 
+                    scanner.nextLine();
                 }
             }
 
@@ -97,10 +97,17 @@ public class Main {
                 throw new RuntimeException(e.getMessage());
             }
 
-            // Pregunatr si quiere ver el historial
-            System.out.print("¿Deseas ver el historial? (s/n): ");
-            String opcHist = scanner.nextLine();
-            if (opcHist.equalsIgnoreCase("s")) {
+            // Preguntar si quiere ver el historial
+            String opcHist;
+            do {
+                System.out.print("¿Deseas ver el historial? (s/n): ");
+                opcHist = scanner.nextLine().trim().toLowerCase();
+                if (!opcHist.equals("s") && !opcHist.equals("n")) {
+                    System.out.println("Opcion no valida. Por favor ingresa 's' o 'n'.");
+                }
+            } while (!opcHist.equals("s") && !opcHist.equals("n"));
+
+            if (opcHist.equals("s")) {
                 try {
                     historial.verHistorial();
                 } catch (IOException e) {
@@ -109,9 +116,16 @@ public class Main {
             }
 
             // Preguntar si desea otra conversión
-            System.out.print("¿Deseas hacer otra conversión? (s/n): ");
-            String opcion = scanner.nextLine();
-            if (!opcion.equalsIgnoreCase("s")) {
+            String opcion;
+            do {
+                System.out.print("¿Deseas hacer otra conversion? (s/n): ");
+                opcion = scanner.nextLine().trim().toLowerCase();
+                if (!opcion.equals("s") && !opcion.equals("n")) {
+                    System.out.println("Opcion no valida. Por favor ingresa 's' o 'n'.");
+                }
+            } while (!opcion.equals("s") && !opcion.equals("n"));
+
+            if (!opcion.equals("s")) {
                 System.out.println("¡Gracias por usar el conversor de monedas!");
                 break;
             }

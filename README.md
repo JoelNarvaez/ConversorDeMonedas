@@ -32,6 +32,19 @@ Esta herramienta es útil tanto para fines educativos como para integrar funcion
 
 ---
 
+## 📘 Instrucciones de Uso
+
+1. Primero, el programa pedirá la **cantidad** que deseas convertir a otro tipo de moneda.  
+2. Luego, solicitará la **moneda base**. Si no estás seguro del nombre exacto, puedes escribir solo las **iniciales** o una **parte del nombre**.  
+3. A continuación, pedirá la **moneda de destino**. Aplica el mismo criterio: escribe una parte del nombre o las iniciales si no lo sabes completo.  
+4. Después de cada conversión, se te preguntará si deseas **ver el historial de conversiones**:  
+   - Escribe `'s'` para sí.  
+   - Escribe `'n'` para no.  
+   - El historial se almacena en un archivo `.json` que es leído e interpretado para mostrar las consultas realizadas a la API.  
+5. Finalmente, podrás indicar si deseas **realizar otra conversión**. En caso afirmativo, se reiniciará el proceso.
+
+---
+
 ## 🧪 Tecnologías Utilizadas
 
 - **Lenguaje:** Java (versión 8 o superior)
